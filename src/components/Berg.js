@@ -1,6 +1,11 @@
 import React from "react";
 
 class Berg extends React.Component {
+    constructor(props){
+        super(props)
+
+    }
+
     calculate = () => {
 
     }
@@ -8,20 +13,20 @@ class Berg extends React.Component {
     render() {
         return(
             <div>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
-                <input type='text'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
+                <input type='number'/>
             </div>
         )
     };
