@@ -29,19 +29,21 @@ class Berg extends React.Component {
 
     calculate(e) {
         e.preventDefault()
-        let inputs = Object.entries(this.state)
-        let total = 0
+        let inputs = Object.entries(this.state.inputs)
+        let result = 0
         inputs.forEach(input => {
-            total += input[1]
+            result += input[1]
         })
-        this.setState({total: total})
+        this.setState({total: result})
     }
 
     updateInput(num, e){
         let parsedInput = parseInt(e.target.value)
+        let inputs = {...this.state.inputs}
         if (Number.isInteger(parsedInput)) {
-            this.setState({inputs: {[num]: parsedInput}})
+            inputs[num] = parsedInput
         }
+        this.setState({inputs: inputs})
     }
 
     handleFocus(e) {
@@ -49,7 +51,7 @@ class Berg extends React.Component {
     }
 
     render() {
-        console.log(this.total)
+        console.log(this.state.inputs)
         return(
             <form onSubmit={this.calculate}>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/>
