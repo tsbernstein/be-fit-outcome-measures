@@ -51,7 +51,6 @@ class Berg extends React.Component {
     }
 
     render() {
-        console.log(this.state.inputs)
         return(
             <form onSubmit={this.calculate}>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/>
