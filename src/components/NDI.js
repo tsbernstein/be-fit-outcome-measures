@@ -39,24 +39,24 @@ class NDI extends React.Component{
             <form>
                 <div>
                     <label>1
-                    <input type='radio' value='1' name='test1'/>
+                    <input type='radio' value='1' name='question-1'/>
                     </label>
                     <label>2
-                    <input type='radio' value='2' name='test1'/>
+                    <input type='radio' value='2' name='question-1'/>
                     </label>
                     <label>3
-                    <input type='radio' value='3' name='test1'/>
+                    <input type='radio' value='3' name='question-1'/>
                     </label>
                 </div>
                 <div>
                     <label>1
-                    <input type='radio' value='1' name='test'/>
+                    <input type='radio' value='1' name='question-2'/>
                     </label>
                     <label>2
-                    <input type='radio' value='2' name='test'/>
+                    <input type='radio' value='2' name='question-2'/>
                     </label>
                     <label>3
-                    <input type='radio' value='3' name='test'/>
+                    <input type='radio' value='3' name='question-2'/>
                     </label>
                 </div>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/>

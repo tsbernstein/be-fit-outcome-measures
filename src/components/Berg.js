@@ -53,7 +53,25 @@ class Berg extends React.Component {
     render() {
         return(
             <form onSubmit={this.calculate}>
-                <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/>
+                <div onChange={(e) => this.updateInput(0, e)}>Question 1: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-1'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-1'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-1'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-1'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-1'/>
+                    </label>
+                </div>
+                {/* <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/> */}
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(1, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(2, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(3, e)}/>
