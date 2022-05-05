@@ -53,7 +53,7 @@ class Berg extends React.Component {
     render() {
         return(
             <form onSubmit={this.calculate}>
-                <div onChange={(e) => this.updateInput(0, e)}>Question 1: 
+                <div className='question' onChange={(e) => this.updateInput(0, e)}>Question 1: 
                     <br/>
                     <label>0
                     <input type='radio' value='0' name='question-1'/>
@@ -71,8 +71,242 @@ class Berg extends React.Component {
                     <input type='radio' value='4' name='question-1'/>
                     </label>
                 </div>
+                <div className='question' onChange={(e) => this.updateInput(1, e)}>Question 2: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-2'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-2'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-2'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-2'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-2'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(2, e)}>Question 3: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-3'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-3'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-3'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-3'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-3'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(3, e)}>Question 4: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-4'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-4'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-4'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-4'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-4'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(4, e)}>Question 5: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-5'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-5'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-5'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-5'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-5'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(5, e)}>Question 6: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-6'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-6'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-6'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-6'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-6'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(6, e)}>Question 7: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-7'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-7'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-7'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-7'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-7'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(7, e)}>Question 8: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-8'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-8'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-8'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-8'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-8'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(8, e)}>Question 9: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-9'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-9'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-9'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-9'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-9'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(9, e)}>Question 10: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-10'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-10'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-10'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-10'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-10'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(10, e)}>Question 11: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-11'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-11'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-11'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-11'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-11'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(11, e)}>Question 12: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-12'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-12'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-12'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-12'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-12'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(12, e)}>Question 13: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-13'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-13'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-13'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-13'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-13'/>
+                    </label>
+                </div>
+                <div className='question' onChange={(e) => this.updateInput(13, e)}>Question 14: 
+                    <br/>
+                    <label>0
+                    <input type='radio' value='0' name='question-14'/>
+                    </label>
+                    <label>1
+                    <input type='radio' value='1' name='question-14'/>
+                    </label>
+                    <label>2
+                    <input type='radio' value='2' name='question-14'/>
+                    </label>
+                    <label>3
+                    <input type='radio' value='3' name='question-14'/>
+                    </label>
+                    <label>4
+                    <input type='radio' value='4' name='question-14'/>
+                    </label>
+                </div>
                 {/* <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(0, e)}/> */}
-                <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(1, e)}/>
+                {/* <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(1, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(2, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(3, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(4, e)}/>
@@ -84,7 +318,7 @@ class Berg extends React.Component {
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(10, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(11, e)}/>
                 <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(12, e)}/>
-                <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(13, e)}/>
+                <input type='number' defaultValue={0} onClick={this.handleFocus} onChange={(e) => this.updateInput(13, e)}/> */}
                 <button>Calculate</button>
                 {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
             </form>
