@@ -1,4 +1,5 @@
 import React from "react";
+import Question from "./Question";
 
 class Berg extends React.Component {
     constructor(props){
@@ -72,7 +73,7 @@ class Berg extends React.Component {
     render() {
         return(
             <form onSubmit={this.calculate}>
-                <div className='question' onChange={(e) => this.updateInput(0, e)}>Question 1: 
+                {/* <div className='question' onChange={(e) => this.updateInput(0, e)}>Question 1: 
                     <br/>
                     <label>0
                     <input type='radio' value='0' name='question-1'/>
@@ -89,7 +90,8 @@ class Berg extends React.Component {
                     <label>4
                     <input type='radio' value='4' name='question-1'/>
                     </label>
-                </div>
+                </div> */}
+                <Question numAnswers={5} name='question-1' label='Question 1'/>
                 <div className='question' onChange={(e) => this.updateInput(1, e)}>Question 2: 
                     <br/>
                     <label>0
