@@ -21,14 +21,10 @@ class Question extends React.Component{
     }
 
     render(){
-        // const answers = this.state.answers.forEach(answer => {
-        //     answer
-        // })
-        // console.log(this.state.answers)
         return(
             <div>{this.props.label}:
                 <br/>
-                {this.state.answers}
+                {this.state.answers} 
             </div>
         )
     }
