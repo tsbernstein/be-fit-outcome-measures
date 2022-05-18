@@ -31,7 +31,7 @@ class Berg extends React.Component {
 
     reset(e){
         Array.from(document.querySelectorAll("input")).forEach(
-            input => (input.value = '')
+            input => (input.checked = false)
         )
         this.setState({            
             inputs: {
