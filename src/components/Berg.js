@@ -1,5 +1,5 @@
 import React from "react";
-import Question from "./Question";
+// import Question from "./Question";
 
 class Berg extends React.Component {
     constructor(props){
@@ -30,6 +30,9 @@ class Berg extends React.Component {
     }
 
     reset(e){
+        Array.from(document.querySelectorAll("input")).forEach(
+            input => (input.value = '')
+        )
         this.setState({            
             inputs: {
                 0: 0,
@@ -89,7 +92,7 @@ class Berg extends React.Component {
                     </label>
                     <label>4
                     <input type='radio' value='4' name='question-1'/>
-                    </label> */}
+                    </label>
                 </div>
                 {/* <Question numAnswers={5} name='question-1' label='Question 1'/>
                 <Question numAnswers={5} name='question-2' label='Question 2'/>
