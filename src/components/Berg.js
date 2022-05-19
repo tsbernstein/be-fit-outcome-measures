@@ -1,5 +1,5 @@
 import React from "react";
-// import Question from "./Question";
+import Question from "./Question";
 
 class Berg extends React.Component {
     constructor(props){
@@ -76,7 +76,7 @@ class Berg extends React.Component {
     render() {
         return(
             <form onSubmit={this.calculate}>
-                <div className='question' onChange={(e) => this.updateInput(0, e)}>Question 1: 
+                {/* <div className='question' onChange={(e) => this.updateInput(0, e)}>Question 1: 
                     <br/>
                     <label>0
                     <input type='radio' value='0' name='question-1'/>
@@ -93,22 +93,22 @@ class Berg extends React.Component {
                     <label>4
                     <input type='radio' value='4' name='question-1'/>
                     </label>
-                </div>
-                {/* <Question numAnswers={5} name='question-1' label='Question 1'/>
-                <Question numAnswers={5} name='question-2' label='Question 2'/>
-                <Question numAnswers={5} name='question-3' label='Question 3'/>
-                <Question numAnswers={5} name='question-4' label='Question 4'/>
-                <Question numAnswers={5} name='question-5' label='Question 5'/>
-                <Question numAnswers={5} name='question-6' label='Question 6'/>
-                <Question numAnswers={5} name='question-7' label='Question 7'/>
-                <Question numAnswers={5} name='question-8' label='Question 8'/>
-                <Question numAnswers={5} name='question-9' label='Question 9'/>
-                <Question numAnswers={5} name='question-10' label='Question 10'/>
-                <Question numAnswers={5} name='question-11' label='Question 11'/>
-                <Question numAnswers={5} name='question-12' label='Question 12'/>
-                <Question numAnswers={5} name='question-13' label='Question 13'/>
-                <Question numAnswers={5} name='question-14' label='Question 14'/> */}
-                <div className='question' onChange={(e) => this.updateInput(1, e)}>Question 2: 
+                </div> */}
+                <Question numAnswers={5} name='question-1' label='Question 1' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-2' label='Question 2' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-3' label='Question 3' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-4' label='Question 4' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-5' label='Question 5' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-6' label='Question 6' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-7' label='Question 7' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-8' label='Question 8' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-9' label='Question 9' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-10' label='Question 10' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-11' label='Question 11' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-12' label='Question 12' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-13' label='Question 13' updateInput={this.updateInput}/>
+                <Question numAnswers={5} name='question-14' label='Question 14' updateInput={this.updateInput}/>
+                {/* <div className='question' onChange={(e) => this.updateInput(1, e)}>Question 2: 
                     <br/>
                     <label>0
                     <input type='radio' value='0' name='question-2'/>
@@ -341,7 +341,7 @@ class Berg extends React.Component {
                     <label>4
                     <input type='radio' value='4' name='question-14'/>
                     </label>
-                </div>
+                </div> */}
                 <button>Calculate</button>
                 {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
                 <button onClick={this.reset}>Reset</button>
