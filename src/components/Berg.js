@@ -30,8 +30,8 @@ class Berg extends React.Component {
     }
 
     reset(e){
-        Array.from(document.querySelectorAll("input")).forEach(
-            input => (input.checked = false)
+        Array.from(document.querySelectorAll("input")).forEach( //Convert all input tags on doc into array elements
+            input => (input.checked = false) // Set all input tag checked values to false
         )
         this.setState({            
             inputs: {
@@ -91,8 +91,8 @@ class Berg extends React.Component {
                 <Question numAnswers={5} min={0} name='question-13' label='Question 13' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={0} name='question-14' label='Question 14' updateInput={this.updateInput}/>
                 <button>Calculate</button>
-                {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
                 <button onClick={this.reset}>Reset</button>
+                {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
             </form>
         )
     };
