@@ -14,7 +14,7 @@ class Question extends React.Component{
         for (let i = 0; i < this.props.numAnswers; i++){
             answers.push(
                 <label>{this.props.min + i}
-                    <input type='radio' value={this.props.min + i} name={this.props.name} onChange={(e) => this.props.updateInput(questionNum, e)}></input>
+                    <input type='radio' value={this.props.min + i} name={this.props.name} onChange={(e) => this.props.updateInput((questionNum - 1), e)}></input>
                 </label>
             )
         };

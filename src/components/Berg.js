@@ -74,6 +74,7 @@ class Berg extends React.Component {
     }
 
     render() {
+        console.log(this.state.inputs)
         return(
             <form onSubmit={this.calculate}>
                 <Question numAnswers={5} min={0} name='question-1' label='Question 1' updateInput={this.updateInput}/>
