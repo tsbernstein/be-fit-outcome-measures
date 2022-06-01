@@ -69,11 +69,17 @@ class Tinetii1 extends React.Component{
     calculate(e) {
         e.preventDefault()
         let inputs = Object.entries(this.state.inputs)
-        let result = 0
-        inputs.forEach(input => {
-            result += input[1]
-        })
-        this.setState({total: result})
+        let balanceResult = 0
+        let gaitResult = 0
+        let combinedResult = 0
+        for (let i = 0; i < 10; i ++) {
+            balanceResult += inputs[i][1]
+        }
+        for (let i = 10; i < 18; i ++) {
+            gaitResult += inputs[i][1]
+        }
+        combinedResult = balanceResult + gaitResult
+        this.setState({balanceTotal: balanceResult, gaitTotal: gaitResult, combinedTotal: combinedResult})
     }
 
     updateInput(num, e){
@@ -109,7 +115,9 @@ class Tinetii1 extends React.Component{
                 <Question numAnswers={3} min={0} name='question-17' label='Question 17' updateInput={this.updateInput}/>
                 <Question numAnswers={2} min={0} name='question-18' label='Question 18' updateInput={this.updateInput}/>
                 <button>Calculate</button>
-                {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
+                {(this.state.combinedTotal === 0) ? null : <div>Balance: {this.state.balanceTotal}</div>}
+                {(this.state.combinedTotal === 0) ? null : <div>Gait: {this.state.gaitTotal}</div>}
+                {(this.state.combinedTotal === 0) ? null : <div>Total: {this.state.combinedTotal}</div>}
                 <button onClick={this.reset}>Reset</button>
             </form>
         )
