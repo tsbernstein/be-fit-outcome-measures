@@ -72,7 +72,7 @@ class QuickDASH extends React.Component{
 
     render(){
         return(
-            <form onSubmit={this.calculate}>
+            <form className='form' onSubmit={this.calculate}>
                 <Question numAnswers={5} min={1} name='question-1' label='Question 1' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={1} name='question-2' label='Question 2' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={1} name='question-3' label='Question 3' updateInput={this.updateInput}/>
