@@ -5,6 +5,7 @@ import Oswestry from "./Oswestry";
 import QuickDASH from "./QuickDASH";
 import Tinetti from "./Tinetti";
 import UEFS from "./UEFS";
+import './surveys.css'
 
 class Welcome extends React.Component {
     constructor(props){
@@ -41,17 +42,17 @@ class Welcome extends React.Component {
 
     render() {
         return (
-        <div>
+        <div className="app-container">
             <h1>Welcome</h1>
             <h3>Please select an outcome measure to get started</h3>
-            <select onChange={this.changeForm}>
+            <select className="drop-down" onChange={this.changeForm}>
                 <option disabled selected value>-- select an option --</option>
-                <option>NDI</option>
-                <option>UEFS</option>
-                <option>QuickDASH</option>
-                <option>Oswestry</option>
                 <option>Berg</option>
+                <option>NDI</option>
+                <option>Oswestry</option>
+                <option>QuickDASH</option>
                 <option>Tinetti</option>
+                <option>UEFS</option>
             </select>
             {this.form()}
         </div>
