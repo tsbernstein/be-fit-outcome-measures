@@ -108,9 +108,12 @@ class UEFS extends React.Component{
                 <Question numAnswers={5} min={0} name='question-18' label='Question 18' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={0} name='question-19' label='Question 19' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={0} name='question-20' label='Question 20' updateInput={this.updateInput}/>
-                <button>Calculate</button>
+                <div className="submit-buttons">
+                    <button>Calculate</button>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
                 {(this.state.total === 0) ? null : <div>UEFS Score: {(this.state.total / 80) * 100}</div>}
-                {(this.state.total === 0) ? null : <div>MCR Rating: {100 - ((this.state.total / 80) * 100)}</div>}                <button onClick={this.reset}>Reset</button>
+                {(this.state.total === 0) ? null : <div>MCR Rating: {100 - ((this.state.total / 80) * 100)}</div>}
             </form>
         )
     };

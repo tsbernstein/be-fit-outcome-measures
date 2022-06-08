@@ -90,9 +90,13 @@ class Berg extends React.Component {
                 <Question numAnswers={5} min={0} name='question-12' label='Question 12' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={0} name='question-13' label='Question 13' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={0} name='question-14' label='Question 14' updateInput={this.updateInput}/>
-                <button>Calculate</button>
-                <button onClick={this.reset}>Reset</button>
-                {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
+                <div className="submit-buttons">
+                    <button>Calculate</button>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
+                <div className="result">
+                    {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
+                </div>
             </form>
         )
     };

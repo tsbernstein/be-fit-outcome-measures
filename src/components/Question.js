@@ -15,6 +15,7 @@ class Question extends React.Component{
             answers.push(
                 <div className="answer-container">
                     <label className="answer-label">{this.props.min + i}
+                    <br/>
                         <input className='answer' type='radio' value={this.props.min + i} name={this.props.name} onChange={(e) => this.props.updateInput((questionNum - 1), e)}></input>
                     </label>
                 </div>
@@ -25,9 +26,11 @@ class Question extends React.Component{
 
     render(){
         return(
-            <div className="question">{this.props.label}:
-                <br/>
-                {this.state.answers} 
+            <div className="question-container">
+                <div className="question">{this.props.label}:
+                    <br/>
+                    {this.state.answers} 
+                </div>
             </div>
         )
     }

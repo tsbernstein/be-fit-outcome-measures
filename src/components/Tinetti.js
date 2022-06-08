@@ -114,11 +114,13 @@ class Tinetii1 extends React.Component{
                 <Question numAnswers={3} min={0} name='question-16' label='Question 16' updateInput={this.updateInput}/>
                 <Question numAnswers={3} min={0} name='question-17' label='Question 17' updateInput={this.updateInput}/>
                 <Question numAnswers={2} min={0} name='question-18' label='Question 18' updateInput={this.updateInput}/>
-                <button>Calculate</button>
+                <div className="submit-buttons">
+                    <button>Calculate</button>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
                 {(this.state.combinedTotal === 0) ? null : <div>Balance: {this.state.balanceTotal}</div>}
                 {(this.state.combinedTotal === 0) ? null : <div>Gait: {this.state.gaitTotal}</div>}
                 {(this.state.combinedTotal === 0) ? null : <div>Total: {this.state.combinedTotal}</div>}
-                <button onClick={this.reset}>Reset</button>
             </form>
         )
     };

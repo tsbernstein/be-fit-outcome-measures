@@ -84,10 +84,11 @@ class QuickDASH extends React.Component{
                 <Question numAnswers={5} min={1} name='question-9' label='Question 9' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={1} name='question-10' label='Question 10' updateInput={this.updateInput}/>
                 <Question numAnswers={5} min={1} name='question-11' label='Question 11' updateInput={this.updateInput}/>
-                
-                <button>Calculate</button>
+                <div className="submit-buttons">
+                    <button>Calculate</button>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
                 {(this.state.total === 0) ? null : <div>{(((this.state.total / 11) - 1) * 25).toFixed(2)}</div>}
-                <button onClick={this.reset}>Reset</button>
             </form>
         )
     }

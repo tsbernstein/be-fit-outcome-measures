@@ -81,10 +81,12 @@ class NDI extends React.Component{
                 <Question numAnswers={6} min={0} name='question-8' label='Question 8' updateInput={this.updateInput}/>
                 <Question numAnswers={6} min={0} name='question-9' label='Question 9' updateInput={this.updateInput}/>
                 <Question numAnswers={6} min={0} name='question-10' label='Question 10' updateInput={this.updateInput}/>
-                
-                <button>Calculate</button>
+                <div className="submit-buttons">
+                    <button>Calculate</button>
+                    <button onClick={this.reset}>Reset</button>
+                </div>
                 {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
-                <button onClick={this.reset}>Reset</button>
+
             </form>
         )
     }

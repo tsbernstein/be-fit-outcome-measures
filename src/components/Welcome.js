@@ -43,8 +43,10 @@ class Welcome extends React.Component {
     render() {
         return (
         <div className="app-container">
-            <h1>Welcome</h1>
-            <h3>Please select an outcome measure to get started</h3>
+            <div className="welcome-container">
+                <h1>Welcome</h1>
+                <h3>Please select an outcome measure to get started</h3>
+            </div>
             <select className="drop-down" onChange={this.changeForm}>
                 <option disabled selected value>-- select an option --</option>
                 <option>Berg</option>
