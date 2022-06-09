@@ -88,7 +88,9 @@ class QuickDASH extends React.Component{
                     <button>Calculate</button>
                     <button onClick={this.reset}>Reset</button>
                 </div>
-                {(this.state.total === 0) ? null : <div>{(((this.state.total / 11) - 1) * 25).toFixed(2)}</div>}
+                <div className="result">
+                    {(this.state.total === 0) ? null : <div>{(((this.state.total / 11) - 1) * 25).toFixed(2)}</div>}
+                </div>
             </form>
         )
     }

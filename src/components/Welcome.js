@@ -47,15 +47,17 @@ class Welcome extends React.Component {
                 <h1>Welcome</h1>
                 <h3>Please select an outcome measure to get started</h3>
             </div>
-            <select className="drop-down" onChange={this.changeForm}>
-                <option disabled selected value>-- select an option --</option>
-                <option>Berg</option>
-                <option>NDI</option>
-                <option>Oswestry</option>
-                <option>QuickDASH</option>
-                <option>Tinetti</option>
-                <option>UEFS</option>
-            </select>
+            <div className="drop-down-container">
+                <select className="drop-down" onChange={this.changeForm}>
+                    <option disabled selected value>-- select an option --</option>
+                    <option>Berg</option>
+                    <option>NDI</option>
+                    <option>Oswestry</option>
+                    <option>QuickDASH</option>
+                    <option>Tinetti</option>
+                    <option>UEFS</option>
+                </select>
+            </div>
             {this.form()}
         </div>
         )

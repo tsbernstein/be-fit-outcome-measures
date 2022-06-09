@@ -85,7 +85,9 @@ class NDI extends React.Component{
                     <button>Calculate</button>
                     <button onClick={this.reset}>Reset</button>
                 </div>
-                {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
+                <div className="result">
+                    {(this.state.total === 0) ? null : <div>{this.state.total}</div>}
+                </div>
 
             </form>
         )

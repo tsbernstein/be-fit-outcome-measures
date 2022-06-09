@@ -85,8 +85,9 @@ class Oswestry extends React.Component{
                     <button>Calculate</button>
                     <button onClick={this.reset}>Reset</button>
                 </div>
-                {(this.state.total === 0) ? null : <div>{this.state.total * 2}% disability</div>}
-
+                <div className="result">
+                    {(this.state.total === 0) ? null : <div>{this.state.total * 2}% disability</div>}
+                </div>
             </form>
         )
     }

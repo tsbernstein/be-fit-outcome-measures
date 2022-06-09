@@ -112,8 +112,10 @@ class UEFS extends React.Component{
                     <button>Calculate</button>
                     <button onClick={this.reset}>Reset</button>
                 </div>
-                {(this.state.total === 0) ? null : <div>UEFS Score: {(this.state.total / 80) * 100}</div>}
-                {(this.state.total === 0) ? null : <div>MCR Rating: {100 - ((this.state.total / 80) * 100)}</div>}
+                <div className="result">
+                    {(this.state.total === 0) ? null : <div>UEFS Score: {(this.state.total / 80) * 100}</div>}
+                    {(this.state.total === 0) ? null : <div>MCR Rating: {100 - ((this.state.total / 80) * 100)}</div>}
+                </div>
             </form>
         )
     };

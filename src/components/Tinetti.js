@@ -119,9 +119,11 @@ class Tinetii1 extends React.Component{
                     <button>Calculate</button>
                     <button onClick={this.reset}>Reset</button>
                 </div>
-                {(this.state.combinedTotal === 0) ? null : <div>Balance: {this.state.balanceTotal}</div>}
-                {(this.state.combinedTotal === 0) ? null : <div>Gait: {this.state.gaitTotal}</div>}
-                {(this.state.combinedTotal === 0) ? null : <div>Total: {this.state.combinedTotal}</div>}
+                <div className="result">
+                    {(this.state.combinedTotal === 0) ? null : <div>Balance: {this.state.balanceTotal}</div>}
+                    {(this.state.combinedTotal === 0) ? null : <div>Gait: {this.state.gaitTotal}</div>}
+                    {(this.state.combinedTotal === 0) ? null : <div>Total: {this.state.combinedTotal}</div>}
+                </div>
             </form>
         )
     };
