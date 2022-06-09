@@ -105,6 +105,7 @@ class Tinetii1 extends React.Component{
                 <Question numAnswers={2} min={0} name='question-8' label='Question 8' updateInput={this.updateInput}/>
                 <Question numAnswers={2} min={0} name='question-9' label='Question 9' updateInput={this.updateInput}/>
                 <Question numAnswers={3} min={0} name='question-10' label='Question 10' updateInput={this.updateInput}/>
+                <br/>
                 <p>Gait Assessment</p>
                 <Question numAnswers={2} min={0} name='question-11' label='Question 11' updateInput={this.updateInput}/>
                 <Question numAnswers={3} min={0} name='question-12' label='Question 12' updateInput={this.updateInput}/>
