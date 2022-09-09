@@ -6,6 +6,7 @@ import QuickDASH from "./QuickDASH";
 import Tinetti from "./Tinetti";
 import UEFS from "./UEFS";
 import LEFS from "./LEFS";
+import WOMAC from "./WOMAC";
 import './surveys.css'
 
 class Welcome extends React.Component {
@@ -38,6 +39,8 @@ class Welcome extends React.Component {
                 return <UEFS/>
             case 'LEFS':
                 return <LEFS/>
+            case 'WOMAC':
+                return <WOMAC/>
             default:
                 return null
         }
@@ -60,6 +63,7 @@ class Welcome extends React.Component {
                     <option>Tinetti</option>
                     <option>UEFS</option>
                     <option>LEFS</option>
+                    <option>WOMAC</option>
                 </select>
             </div>
             {this.form()}

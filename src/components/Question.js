@@ -10,7 +10,7 @@ class Question extends React.Component{
 
     componentDidMount(){
         let answers = [];
-        let questionNum = parseInt(this.props.label.split(' ')[1]) // Take the 1 index of the question number array to have a reference to that specific question
+        let questionNum = parseInt(this.props.name.split('-')[1]) // Take the 1 index of the question number array to have a reference to that specific question
         for (let i = 0; i < this.props.numAnswers; i++){
             answers.push(
                 <div className="answer-container">
