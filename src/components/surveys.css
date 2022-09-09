@@ -47,3 +47,49 @@
 .drop-down-container {
     padding-bottom: 1em;
 }
+
+@media only screen and (max-width:428px) {
+    .form {
+        width: 100%;
+        border: none;
+    }
+
+    .drop-down {
+        font-size: 24px;
+    }
+
+    .question {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 24px;
+    }
+
+    .question-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .answer-container {
+        font-size: 26px;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .submit-buttons {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
