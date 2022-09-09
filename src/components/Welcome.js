@@ -5,6 +5,7 @@ import Oswestry from "./Oswestry";
 import QuickDASH from "./QuickDASH";
 import Tinetti from "./Tinetti";
 import UEFS from "./UEFS";
+import LEFS from "./LEFS";
 import './surveys.css'
 
 class Welcome extends React.Component {
@@ -35,6 +36,8 @@ class Welcome extends React.Component {
                 return <Tinetti/>
             case 'UEFS':
                 return <UEFS/>
+            case 'LEFS':
+                return <LEFS/>
             default:
                 return null
         }
@@ -56,6 +59,7 @@ class Welcome extends React.Component {
                     <option>QuickDASH</option>
                     <option>Tinetti</option>
                     <option>UEFS</option>
+                    <option>LEFS</option>
                 </select>
             </div>
             {this.form()}
